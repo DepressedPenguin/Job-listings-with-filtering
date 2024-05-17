@@ -1,30 +1,41 @@
-# React + TypeScript + Vite
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<!-- App Component -->
+<h2>App Component</h2>
+<p><strong>Description:</strong><br>
+The <code>App</code> component serves as the main entry point for our application. It integrates various components such as <code>Header</code>, <code>Filter</code>, and <code>CardList</code> to provide a seamless job listing experience. It utilizes React's state management to handle language filtering and data display.</p>
 
-Currently, two official plugins are available:
+<!-- Header Component -->
+<h2>Header Component</h2>
+<p><strong>Description:</strong><br>
+The <code>Header</code> component represents the header section of our application. It provides a clean and minimalistic design to enhance user experience.</p>
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+<!-- Filter Component -->
+<h2>Filter Component</h2>
+<p><strong>Description:</strong><br>
+The <code>Filter</code> component allows users to filter job listings based on selected languages. It dynamically renders selected languages and provides a "CLEAR" button to reset the filter. The component offers an intuitive interface for language selection.</p>
 
-## Expanding the ESLint configuration
+<!-- JobCard Component -->
+<h2>JobCard Component</h2>
+<p><strong>Description:</strong><br>
+The <code>JobCard</code> component displays detailed information about a job listing. It showcases the company logo, name, job title, posting details, and required languages. Users can click on individual languages to filter job listings accordingly.</p>
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+<!-- CardList Component -->
+<h2>CardList Component</h2>
+<p><strong>Description:</strong><br>
+The <code>CardList</code> component renders a list of job cards based on filtered data. It dynamically filters job listings based on selected languages and displays relevant cards. The component efficiently handles data filtering and rendering for an optimized user experience.</p>
 
-- Configure the top-level `parserOptions` property like this:
+<p>Desktop Preview:<br>
+<img src="https://github.com/DepressedPenguin/Job-listings-with-filtering/blob/master/src/Desktop_img.png?raw=true" alt="Desktop Preview" width="600"></p>
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+<p>Mobile Preview:<br>
+<img src="https://raw.githubusercontent.com/DepressedPenguin/Job-listings-with-filtering/master/src/Mobile_img.png" alt="Mobile Preview" width="300"></p>
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+</body>
+</html>
